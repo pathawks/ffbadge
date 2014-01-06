@@ -26,18 +26,18 @@ Before editing your template **always make sure you have saved a backup copy in 
 On your blog's dashboard, go to the "Layout" tab and click on "Edit Template HTML"  
 Click the "Expand Widget Templates" check box  
 Right under the `<head>` tag, insert  
-{% highlight html %}
+```html
 <script src='http://www.pathawks.com/ffbadge.js'></script>
-{% endhighlight %}  
+```  
 Search for the line that starts with `<b:skin>` and, underneath, insert the line  
-{% highlight css %}
+```css
 @import url("http://www.pathawks.com/ffbadge.css");
-{% endhighlight %}  
+```  
 Search for the line `<div class='post-footer'>`  
 Right under that line, insert  
-{% highlight html %}
+```html
 <script expr:src='"http://pipes.yahoo.com/pathawks/ffbadge?_render=json&amp;_callback=ffbadge&amp;service=blog&amp;who=NICKNAME&amp;link=" + data:post.url'/>
-{% endhighlight %}  
+```  
 of course, replacing  **NICKNAME** with your FriendFeed nickname, all lowercase and with out spaces (mine is "pathawks")  
 Click the orange "Save Template" button and you should be all set.
 
@@ -45,34 +45,34 @@ Click the orange "Save Template" button and you should be all set.
 
 On your blog's dashboard, go to the "Template" tab and click on "Edit Template HTML"  
 Right under the `<head>` tag, insert  
-{% highlight html %}
+```html
 <script src='http://www.pathawks.com/ffbadge.js'></script>
-{% endhighlight %}  
+```  
 Search for the line that starts with `<style type="text/css">` and, underneath, insert the line   
-{% highlight css %}
+```css
 @import url("http://www.pathawks.com/ffbadge.css");
-{% endhighlight %}  
+```  
 Search for the line `<$BlogItemControl$>`  
 Right under that line, insert  
-{% highlight html %}
+```html
 <script src="http://pipes.yahoo.com/pathawks/ffbadge?_render=json&amp;_callback=ffbadge&amp;service=blog&amp;who=NICKNAME&amp;link=<$BlogItemPermalinkUrl$>"></script>
-{% endhighlight %}  
+```  
 of course, replacing  **NICKNAME** with your FriendFeed nickname, all lowercase and with out spaces (mine is "pathawks")  
 Click the orange "Save Template Changes" button and you should be all set.</p><p><h3>In Tumblr...</h3>On your dashboard, click on "Customize"  
 Go to the "Theme" tab and select "Use custom HTML"  
 Right under the `<head>` tag, insert  
-{% highlight html %}
+```html
 <script src='http://www.pathawks.com/ffbadge.js'></script>
-{% endhighlight %}  
+```  
 Search for the line that starts with `<style type="text/css">` and, underneath, insert the line  
-{% highlight css %}
+```css
 @import url("http://www.pathawks.com/ffbadge.css");
-{% endhighlight %}  
+```  
 Search for the line `{/block:Posts}`  
 Above that line, you should see `</div>` Above **that** line, insert  
-{% highlight html %}
+```html
 <script src="http://pipes.yahoo.com/pathawks/ffbadge?_render=json&amp;_callback=ffbadge&amp;service=tumblr&amp;who=NICKNAME&amp;link={PostID}"></script>
-{% endhighlight %}  
+```  
 of course, replacing **NICKNAME** with your FriendFeed nickname, all lowercase and with out spaces (mine is "pathawks")  
 Click the orange "Save Template Changes" button and you should be all set.
 
@@ -86,9 +86,9 @@ Click on "FeedFlare"
 If FeedFlare is not enabled (you're out of your mind) enable it.  
 Scroll down to "Personal FeedFlare" and you should see a box where you can enter or past a Flare Unit URL.  
 Enter  
-{% highlight text %}
+```text
 http://www.feedburner.com/fb/variableflareunits/GenericFeedFlare.jspx?text=Discuss%20on%20FriendFeed&link=http://friendfeed.com/search?q=${title}%26service=blog%26who=NICKNAME
-{% endhighlight %}  
+```  
 (If this is your Tumblr feed, you'll want to change "service=blog" to "service=tumblr")  
 
 ### In conclusion
