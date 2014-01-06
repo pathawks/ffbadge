@@ -1,0 +1,14 @@
+.friendfeedcomments {padding:4px;margin:2px auto 2px auto;border:1px solid #000000;background:#ffffff;color:#000000;text-align:left;line-height:1.1em;clear:both;max-width:100%;}
+img.friendfeedicon {display:none;}
+.friendfeedcommentslink {background:url(http://friendfeed.com/static/images/icons/internal.png) no-repeat top left;padding: 0 0 4px 18px}
+.togglefriendfeedcommentslink {color:#7777cc;border-left:10px solid #ffffff;}
+.friendfeedpermalink {text-align:right;margin:.4em 0;}
+.friendfeedpermalink a {color:#0000ff;}
+.friendfeedlikeslist {border-top:1px solid #999999;margin:5px 0;padding:5px 0;}
+.friendfeedlikeslist ul {display:inline;padding:0;margin:0;}
+.friendfeedlikeslist ul li {display:inline;}
+.friendfeedcommentslist ul {margin:0;padding:0 0 20px 0;}
+.friendfeedcommentslist ul li {display:block;clear:both;padding:5px 0 0 0;margin: 5px 0 5px 0;border-top:1px solid #999999;list-style-type:none;}
+.profileImage {float:left;margin:2px 4px 2px 0;width:65px;padding:0;}
+.profileImage img {border:0;float:left;width:50px;padding:0;}
+.friendfeedcomment a {color:#0000ff;}
